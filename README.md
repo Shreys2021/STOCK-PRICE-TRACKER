@@ -32,6 +32,4 @@ GET /subscribed-stocks: Get a list of subscribed stocks for the authenticated us
 
 PUT /subscribe: Subscribe to a stock as an authenticated user.
 
-GET /:sub: Retrieve the list of stocks subscribed by a user.
-
 DELETE /remove-stock: Remove a subscribed stock from the user's list.
