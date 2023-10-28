@@ -1,0 +1,66 @@
+.subscribe-stock {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.market-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stock-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+
+.stock-list:nth-child(odd) {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.stock-list:nth-child(even) {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-message {
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
