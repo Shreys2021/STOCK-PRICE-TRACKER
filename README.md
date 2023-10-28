@@ -1,4 +1,5 @@
 **Stock Market Web Application**
+
 This is a stock market web application built using Node.js, Express.js, and MongoDB for the backend, and React for the frontend. The application allows users to view and subscribe to stock market data. It also provides real-time updates on stock prices.
 
 **Features**
