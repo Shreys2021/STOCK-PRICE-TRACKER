@@ -21,7 +21,7 @@ const StocksList = () => {
 
         const fetchStocks = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/');
+                const response = await axios.get('https://pricetracker-0npd.onrender.com/');
                 setStocks(response.data);
             } catch (error) {
                 console.error('Error fetching stocks:', error);
@@ -51,7 +51,7 @@ const StocksList = () => {
     };
 
     const handleSubscribe = (stockId) => {
-        const url = `http://localhost:5000/subscribe?sub=${user.sub}&stockId=${stockId}`;
+        const url = `https://pricetracker-0npd.onrender.com/subscribe?sub=${user.sub}&stockId=${stockId}`;
         axios
             .put(url)
             .then((response) => {
