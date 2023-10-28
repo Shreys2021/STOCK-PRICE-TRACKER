@@ -21,7 +21,7 @@ const SubscribeStock = ({ userSub }) => {
 
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/subscribed-stocks?sub=${user.sub}`);
+                const response = await axios.get(`https://pricetracker-0npd.onrender.com/subscribed-stocks?sub=${user.sub}`);
                 const { userStocks } = response.data;
                 setSubscribedStocks(userStocks);
                 setIsLoading(false);
@@ -55,7 +55,7 @@ const SubscribeStock = ({ userSub }) => {
 
     const handleRemoveStock = (stockId) => {
         axios
-            .delete(`http://localhost:5000/remove-stock?stockId=${stockId}&userId=${user.sub}`)
+            .delete(`https://pricetracker-0npd.onrender.com/remove-stock?stockId=${stockId}&userId=${user.sub}`)
             .then((response) => {
                 if (response.status === 200) {
                     setSubscribedStocks(response.data.stocks.userStocks)
